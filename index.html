@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تسجيل الدخول</title>
+    <link  href="diamond-161739_640.webp" type="image/x-icon" rel="icon"  />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('img.jpg') no-repeat center center fixed; /* رابط الصورة */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: rgba(255, 255, 255, 0.3); /* خلفية شفافة للنموذج */
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #ffffff; /* لون العنوان */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid rgba(255, 255, 255, 0.8); /* حدود شفافة */
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2); /* خلفية شفافة */
+            color: white; /* لون النص */
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #6a1b9a; /* تغيير لون الحدود عند التركيز */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6a1b9a; /* لون الزر */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #4a148c; /* لون الزر عند التمرير */
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        a {
+            color: #ffffff; /* لون الروابط */
+            text-decoration: none;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .remember-me input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2> 𝐋𝐨𝐠 𝐢𝐧 </h2>
+            <form action="https://ahmedzizo744.github.io/portofoliooo/">
+            <input type="text" placeholder="𝘜𝘴𝘦𝘳𝘯𝘢𝘮𝘦 " required>
+            <input type="password" placeholder=" 𝑃𝑎𝑠𝑠𝑤𝑜𝑟𝑑" required>
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">𝚁𝚎𝚖𝚒𝚗𝚍 𝚖𝚎</label>
+            </div>
+            <button type="submit">𝐋𝐨𝐠 𝐢𝐧 </button>
+            <div class="footer">
+                <p> Don't have an account? <a href="#">Check in</a></p>
+                <p><a href="#">Forgot Password?</a></p>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
